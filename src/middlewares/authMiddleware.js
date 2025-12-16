@@ -21,10 +21,10 @@ const protect = async (req, res, next) => {
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    // ✅ FIXED: Attach FULL user info including role
+    // Attach user info to request object
     req.user = {
       userId: decoded.userId,
-      role: decoded.role  // ← THIS IS CRITICAL!
+      role: decoded.role
     };
 
     next();

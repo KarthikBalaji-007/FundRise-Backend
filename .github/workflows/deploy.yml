@@ -24,7 +24,7 @@ jobs:
             cd /home/ubuntu || exit 1
 
             if [ ! -d "FundRise-Backend" ]; then
-              git clone https://github.com/KarthikBalaji-007/FundRise-Backend.git
+              git clone https://github.com/thara1999/backend-sece-Aiml.git
             fi
 
             cd FundRise-Backend || exit 1
